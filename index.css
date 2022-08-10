@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .main{
+    background-color: orange;
+    width:  300px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    /* transition-property:width ;
+    transition-duration:2s ;
+    transition-delay: 1s;
+    transition-timing-function:ease-in-out; */
+    /* transition: width 2s ease-in-out 1s; */
+    /* transition: height 3s ease-in-out 1s; */
+    /* transition: width 2s,transform 2s; */
+  /* }
+  /* .main h1{
+    fornt-size:2.5rem;
+    color:white;
+    transition: font-size 2s;
+  }
+  .main:hover{
+   width: 400px;
+   transform:rotate(360deg) */
+  /* }  */
+ h1{
+    text-align: center;
+ }
+.skill-container{
+  background-color: blueviolet;
+}
+.skill-container li{
+  list-style-type: none;
+  margin: 50px 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.skill-container li::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(170,167,173);
+  width: 50%;
+  left: 0;
+  height:25px ;
+  top: calc(100%+  5px);
+  border-radius: 1000px;
+}
+
+.skill-container li::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(249,249,250);
+  width: 0;
+  left: 0;
+  height:25px ;
+  top: calc(100%+  5px);
+  border-radius: 1000px;
+  /*Animation making*/
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: forward;
+  animation-fill-mode: forwards;
+}
+.skill-container li.html::after{
+   animation-name: html;
+}
+@keyframes html {
+  to{width: 90%;
+    background-color: orange;
+  }
+}
+.skill-container li.css::after{
+  animation-name: css;
+}
+@keyframes css {
+  to{width:90% ;
+    background-color: aqua;
+  }
+}
+.skill-container li.bootstrap::after{
+  animation-name: bootstrap;
+}
+@keyframes bootstrap {
+  to{width: 95%;
+    background-color: red;
+  }
+}
+.skill-container li.sass::after{
+  animation-name: sass;
+}
+@keyframes sass {
+  to{width: 70%;
+    background-color: blue;
+  }
+}
+.skill-container li.react::after{
+  animation-name: react;
+}
+@keyframes react {
+  to{width: 85%;
+    background-color: brown;
+  }
+}
+.skill-container li.redux::after{
+  animation-name: redux;
+}
+@keyframes redux {
+  to{
+    width: 89%;
+    background-color: cadetblue;
+  }
+}
+.skill-container li.js::after{
+ animation-name: js;
+}
+@keyframes js {
+  to{width: 100%;
+    background-color: chartreuse;
+  }
+}
+
+.skill-container li.vue::after{
+  animation-name:vue ;
+}
+@keyframes vue {
+  to{width: 50%;
+    background-color: chocolate;
+  }
+}
+.skill-container li.mongodb::after{
+ animation-name: mongodb;
+}
+@keyframes mongodb {
+  to{width: 95%;
+    background-color: cornflowerblue;
+  }
+}
+.skill-container li.oop::after{
+   animation-name: oop;
+}
+@keyframes oop {
+  to{width: 92;
+    background-color: cyan;
+  }
+}
+.skill-container li.ds::after{
+  animation-name: ds;
+}
+@keyframes ds {
+  to{
+    width: 74%;
+    background-color: darkmagenta;
+  }
+}
